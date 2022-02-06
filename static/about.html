@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University website-sujal sahu|about page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <section class="header headerimg">
+        <nav class="background">
+            <div class="leftflex">
+                <a href="\" class="logo"><img src="eduford_img/graduation-309661_1280.png" alt="college logo"></a>
+                <p>CAMBRIDGE UNIVERSITY</p>
+            </div>
+
+            <div class="navlinks" id="NAVLINKS">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <a href="\" id="link-1">HOME</a>
+                <a href="/about.html" id="link-3">ABOUT</a>
+                <a href="/courses.html" id="link-5">COURSES</a>
+                <a href="/blog.html" id="link-4">BLOG</a>
+                <a href="/contact.html" id="link-2">CONTACT</a>
+
+            </div>
+            <div class="icon">
+                <i class="fa fa-bars" onclick="showmenu()"></i>
+            </div>
+        </nav>
+        <div class="sub-header">
+            <h1>ABOUT US</h1>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="about-content">
+            <h2>WE ARE THE WORLD LARGEST UNIVERSITY</h2>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum suscipit, molestias natus earum maxime
+            excepturi qui obcaecati vero voluptatem corporis culpa dolorem sapiente tenetur praesentium ut deleniti
+            quis? Debitis reprehenderit perferendis, aut officia consequuntur modi eos distinctio earum asperiores,
+            sequi impedit eaque fugiat ab cupiditate. Corrupti inventore esse nesciunt cum magni obcaecati, incidunt
+            atque placeat.</P>
+            <a class="herobutton redbutton" href="#">EXPLORE NOW</a>
+        </div>
+        <DIV class="image">
+            <img src="/eduford_img/about.jpg" alt="about image">
+        </DIV>
+    </section>
+
+    <section class="aboutus">
+        <h3>ABOUT US</h3>
+        <P>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda distinctio, nostrum suscipit voluptates
+            exercitationem repudiandae quidem placeat alias, accusantium pariatur corporis quo quia fuga dolor aliquam?
+            Quia similique deleniti modi fugit ad nostrum omnis.
+        </P>
+    </section>
+
+    <SECTION class="footer">
+        <p>Made by sujal web development company. Copyright<i class="fa fa-copyright" aria-hidden="true"></i> action
+            reserved</p>
+    </SECTION>
+
+     <!--------------------------------JAVASCRIPT-------------------------------------------------------------------------------------->
+     <script>
+        var NAVLINKS = document.getElementById("NAVLINKS");
+        function showmenu() {
+            NAVLINKS.style.right = "0px";
+        }
+        function hidemenu() {
+            NAVLINKS.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>

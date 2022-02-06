@@ -1,0 +1,721 @@
+*{
+    margin:0px;
+    padding:0px;
+    color:white;
+    width:auto;
+}
+
+.header{
+    min-height:75vh;
+    width: 100%;
+    background-image: linear-gradient(rgb(170 145 145),rgb(200 3 3 / 32%)),url("/eduford_img/castle-336498_1920.jpg");
+    background-size:cover;
+    background-position: center;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #5145428a;
+}
+
+.leftflex{
+    display: flex;                                                  
+    align-items: center;
+    /* justify-content: space-between; */
+    text-align: left;
+    width: 50%;
+}
+
+.logo{
+      /* display: inline-block; */
+      width: 14%;
+      text-align: center;
+      /* background: #fff; */
+      margin: 0%;
+      padding: 0%;
+      position: relative;
+      top: 4px;
+      left: 17px;
+}
+
+.leftflex img{
+    width: 67%;
+    height: 106%;
+    display: inline-block;
+}
+
+.leftflex p{
+    font-size: 34px;
+    font-weight: bold;
+    text-align: center;
+    margin: 5% 5% 5% 1%;
+    padding: 0%;
+}
+
+@media only screen and (max-width:1120px) and (min-width:900px){
+    .leftflex p{
+        font-size:23px;
+    }
+}
+
+.navlinks{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    width: 50%;
+}
+
+@media only screen and (max-width:1120px) and (min-width:900px){
+    .navlinks{
+        width:58%;
+    }
+}
+
+.navlinks a{
+    margin:0% 4%;
+    text-decoration:none;
+}
+.navlinks a::after{
+    content:'';
+    width:0%;
+    display:block;
+    background:red;
+    height:2px;
+    margin:auto;
+    transition: 0.3s;
+}
+
+.navlinks a:hover::after{
+    width:100%;
+}
+
+.textbox{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 405px;
+}
+
+.textbox h1{
+    font-size: 48px;
+    margin: 3%;
+    padding: 0%;
+}
+
+.textbox p{
+    text-align: center;
+    width: 50%;
+    margin: 4%;
+    padding: 0%;
+    font-size: 18px;
+}
+
+.herobutton{
+    text-decoration: none;
+    border: 2px solid #131313;
+    margin: 0%;
+    padding: 1%;
+    background-color: #fffffffa;
+    color: black;
+    font-weight: bold;
+    transition:0.3s;
+}
+
+.herobutton:hover{
+    color:white;
+    font-weight: bold    ;
+    border:1px solid black;
+    background-color:rgb(236, 14, 14);
+    margin:0%;
+    padding:1.5%;
+}
+   
+nav .fa{
+    display:none;
+}
+
+@media only screen and (max-width:900px){
+    .navlinks{
+        background-color: coral;
+        height: 100vh;
+        width: 200px;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+        margin: 0px;
+        position: fixed;
+        z-index: 2;
+        top: 0px;
+        right: -200px;
+        /* text-align: left;*/
+        transition:1s;
+    }
+
+    .navlinks a{
+         display: block;
+    position: relative;
+    top: 0px;
+    right: 0px;
+    text-align: left;
+    color: #141111;
+    margin: 12% 0%;
+    width: 78%;
+    }
+
+    nav .fa{
+        display:block;
+        cursor: pointer;
+        font-size:20px;
+    }
+
+    .navlinks .fa{
+        margin:12px;
+        text-align:left;
+        width: 83%;
+        
+        
+    }
+
+    .icon{
+        margin: 7% 1% 7% 46%;
+    }
+    
+    .textbox{
+        position: absolute;
+        top: 20%;
+    }
+
+    .textbox h1{
+        font-size: 27px;
+        margin: 4% 4%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:900px) and (min-width:400px){
+    .logo{
+        width:24%;
+    }
+
+    .leftflex p{
+        position:absolute;
+        margin: 5% 5% 5% 14%;
+        font-size: 23px;
+    }
+}
+
+@media only screen and (max-width:400px){
+    .leftflex p{
+        position:absolute;
+        font-size:21px;
+        /* left:0%;
+        top:1%; */
+        margin: 5% 5% 5% 8%;
+    }
+    .logo{
+        display:none;
+    }
+}    
+
+.courses{
+    color:black;
+}
+
+.commonh1{
+    font-size: 34px;
+    margin-top: 3%;
+    padding: 6px;
+    text-align: center;
+    color: black;
+    width:100%;
+}
+
+.commonp{
+    text-align:center;
+    color:black;
+}
+
+.row{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+    margin:10px;
+    padding:5px;
+
+}
+
+.courses-col{
+    flex-basis: 33%;
+    border:2px solid black;
+    margin:10px;
+    padding:5px;
+    background-color: #dc917878;
+    text-align: center;
+}
+
+.courses-col:hover{
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,5);
+}
+
+.courses-col h3{
+    text-align:center;
+    color:black;
+    margin:5px;
+    padding:3px;
+}
+
+@media only screen and (max-width:700px){
+    .row{
+        flex-direction:column;
+    }
+    .header{
+        min-height:90vh;
+    }
+}
+
+.campus-col{
+    position: relative;
+    flex-basis: 33%;
+    /* border:2px solid black; */
+    margin:10px;
+    box-sizing:border-box;
+    border-radius:12px;
+}
+
+.campus-col img{
+   
+    width:100%;
+    border-radius: 12px; 
+}
+
+.campus-col h3{
+    display: block;
+    color:white;
+    position:absolute;
+    height:11%;
+    width:100%;
+    top:100%;
+    left:30%;
+    font-weight:500;
+    font-size:25px;
+
+    transition:1s;
+}
+
+.layer{
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+}
+
+.campus-col:hover .layer{
+    background-color:rgba(202, 125, 62, 0.473);
+
+}
+
+.campus-col:hover{
+    background-color:darkseagreen;
+}
+
+.campus-col:hover h3{
+    /* background-color: darkseagreen; */
+    display: block;
+    color:black;
+    top:50%;
+    left:30%;
+}
+
+.fac-col{
+    flex-basis: 33%;
+    box-sizing: border-box;
+    margin:10px;
+    padding:5px;
+    
+    
+}
+
+.fac-col img{
+    margin: 0px 10px 0px 10px;
+    padding: 0px;
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+.fac-col h3{
+    color:black;
+    font-size:25px;
+    font-weight:500;
+    margin:0px 15px;
+}
+
+.testimonials{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.testimonial img{
+    width: 15%;
+    border-radius: 100px;
+    height: 41%;
+    margin: 15px;
+}
+
+.head-testimonial{
+    flex-basis:44%;
+    background-color: blanchedalmond;
+    display: flex;
+    /* width: 44%; */
+    margin: 10px;
+    padding: 10px;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items:center;
+    /* position: relative; */
+    /* height: 190px; */
+}
+
+.testimonial{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.testimonial .fa{
+    color:#cc9c60;
+}
+
+.testimonial p{
+    margin:0px 10px;
+    padding: 10px;
+    color: black;
+}
+
+.contact{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+    text-align: center;
+    margin:20px;
+    padding:5px;
+    /* color:black; */
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('/eduford_img/banner2.jpg');
+    background-position: center;
+    background-size:cover;
+}
+
+.contact h1{
+    margin: 20px 10px 0px 10px;
+    /* color: black; */
+    font-size: 34px;
+
+}
+
+.contact p{
+    /* color: black; */
+    margin: 0px 20px 20px 20px;
+}
+
+.contact .fa{
+    display:flex;
+    margin:0px 10px;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    /* font-size: 10%; */
+}
+
+.aboutus{
+    text-align: center;
+    margin: 20px;
+    padding:10px;
+}
+
+.aboutus h3{
+    color:black;
+    font-size:17px;
+    /* font-weight:500; */
+    margin:0px 15px;
+}
+
+.aboutus p{
+    color:black;
+}
+
+.footer{
+    background:black;
+    text-align: center;
+}
+
+/* @media only screen and (min-width:400px) and (max-width:600px){
+    .footer{
+        margin-bottom:34px;
+    }
+} */
+
+/* ------------------------------------------------------ABOUT PAGE STYLING----------------------------------------------------------------- */
+.sub-header h1{
+    display: flex;
+    font-size: 61px;
+    align-items: center;
+    justify-content: center;
+    min-height: 58vh;
+    text-align: center;
+}
+
+.about{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:20px;
+    padding:10px;
+    box-sizing: border-box;
+}
+
+.about-content{
+    color: black;
+    flex-basis: 44%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 20px;
+    padding: 2px;
+}
+
+.about-content h2{
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    margin: 0px 0 39px 0px;
+}
+
+.about-content p{
+    color: black;
+    font-size: 15px;
+    /* font-weight: bold; */
+    text-align: center;
+    margin-bottom: 27px;
+}
+
+.image{
+    flex-basis:44%;
+    margin:20px;
+    padding:10px;
+} 
+
+.image img{
+    width:96%;
+}
+
+.redbutton{
+    margin: 10% 0% 0% 35%;
+}
+
+.redbutton:hover{
+    margin: 10% 0% 0% 35%;
+}
+
+@media only screen and (max-width:700px){
+    .about{
+        flex-direction: column;
+    }
+}
+
+.headerimg{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(/eduford_img/background.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.background{
+    background:#a187818a;
+}
+
+.blogcontent{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftblog{
+     flex-basis: 64%;
+
+}
+
+.leftblog h2{
+    color: black;
+    font-size: 32px;
+    margin-top: 42px;
+    text-align: center;
+  
+}
+  
+.leftblog p{
+    color: black;
+    margin-top: 10px;
+    font-size: 18px;
+    margin-left: 10px;
+  
+}
+
+.leftblog img{
+    width:100%;
+  
+}
+
+.rightblog{
+    flex-basis: 32%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rightblog h2{
+    background: blanchedalmond;
+    color: black;
+    font-size: 32px;
+    margin-top: -310px;
+    text-align: center;
+}
+
+.rightblog div{
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rightblog span{
+    color:black;
+    font-size: 20px;
+}
+
+.commentform{
+    border: 1px solid black;
+    margin: 5%;
+    padding: 10px;
+    width: 88%;
+
+}
+
+.commentform h2{
+    color: black;
+    font-size: 42px;
+    margin: 3px;
+    text-align: center;
+}
+
+.commentbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.commentform input,.commentform textarea{
+    background: #8080802e;
+    border: 1px solid black;
+    /* display: block; */
+    margin: 20px;
+    /* text-align: center; */
+    width: 50%;
+    font-weight: bold;
+    height: 30px;
+    color:black;
+}
+
+@media only screen and (max-width:700px){
+    .rightblog h2 {
+        background: blanchedalmond;
+        color: black;
+        font-size: 32px;
+        margin-top: 28px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:425px){
+    .sub-header h1{
+        font-size: 38px;
+    }
+}
+@media only screen and (max-width:400px){
+    .commentform{
+        padding:3px;
+    }
+}
+
+.map{
+    width: 88%;
+    margin: 5% auto;
+    /* margin-top: 5%; */
+    box-sizing: border-box;
+}
+
+.map .map1{
+    width:100%;
+}
+
+.contact-col .fa{
+    color:black;
+
+}
+
+.contact-col-content{
+    display: flex;
+    margin: 5%;
+    margin-left: 26%;
+    padding: 10px;
+    align-items: center;
+    width: 100%;
+}
+
+.contact-col-content .fa{
+    margin:5% 0%;
+}
+
+.contact-col-content h5{
+    color:black;
+    font-size:15px;
+    margin:0px 10px;
+}
+
+.contact-col-content p{
+    color:black;
+    font-size:15px;
+    margin:0px 10px;
+}
+
+.contact-col{
+    width: 63%;
+}
+
+.clientmessage{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 0%;
+}
+
+.clientmessage input,.clientmessage textarea{
+    background:#8080802e;
+    width: 80%;
+    margin: 10px auto;
+    font-weight: bold;
+    color:black;
+}
+
+.clientmessage textarea{
+    font-size:16px;
+}

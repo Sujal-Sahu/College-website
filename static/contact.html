@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University website-sujal sahu|about page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <section class="header headerimg">
+        <nav class="background">
+            <div class="leftflex">
+                <a href="\" class="logo"><img src="eduford_img/graduation-309661_1280.png" alt="college logo"></a>
+                <p>CAMBRIDGE UNIVERSITY</p>
+            </div>
+
+            <div class="navlinks" id="NAVLINKS">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <a href="\" id="link-1">HOME</a>
+                <a href="/about.html" id="link-3">ABOUT</a>
+                <a href="/courses.html" id="link-5">COURSES</a>
+                <a href="/blog.html" id="link-4">BLOG</a>
+                <a href="/contact.html" id="link-2">CONTACT</a>
+
+            </div>
+            <div class="icon">
+                <i class="fa fa-bars" onclick="showmenu()"></i>
+            </div>
+        </nav>
+        <div class="sub-header">
+            <h1>CONTACT US</h1>
+        </div>
+    </section>
+
+    <section class="map">
+        <iframe class="map1"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d481.7000118634795!2d73.70528678369507!3d24.61734174674744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3967e5ab69358023%3A0xcc826fad6f884522!2sSuryodaya%20Colony%2C%20Pulla%20Bhuwana%2C%20Arihant%20Nagar%2C%20Bhuwana%2C%20Udaipur%2C%20Rajasthan%20313001!5e0!3m2!1sen!2sin!4v1629017393872!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <section class="contactform">
+        <div class="row">
+        <div class="contact-col">
+            <div class="contact-col-content">
+                <i class="fa fa-home" aria-hidden="true"></i>
+            <div>
+             <h5>H.NO.5,SURYODAY COLONY,BHUWANA</h5>
+             <P>UDAIPUR,RAJASTHAN</P>
+            </div>
+        </div>
+        <div class="contact-col-content">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <div>
+             <h5>+91 9829277695</h5>
+             <P>monday to saturday,10:00a.m. - 3:00pm</P>
+            </div>
+            </div>
+            <div class="contact-col-content">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+            <div>
+             <h5>info@sujalsahu0804@gmail.com</h5>
+             <P>query us on email</P>
+            </div>
+            </div>
+       
+        </div>
+        <div class="contact-col">
+            <form action="/contact" class="clientmessage" method="POST">
+                <input type="text" name="name" id="name1" placeholder="ENTER YOUR NAME">
+                <input type="email" name="email" id="email1" placeholder="ENTER YOUR EMAIL">
+                <input type="text" name="number" id="number1" placeholder="ENTER YOUR PHONE NO.">
+                <input type="text" name="age" id="age1" placeholder="ENTER YOUR AGE">
+                <input type="text" name="subject" id="subject1" placeholder="ENTER YOUR SUBJECT">
+                <textarea name="message" id="message1" rows="10" placeholder="ENTER YOUR MESSAGE"></textarea>
+                <button type="submit" class="herobutton">SEND MESSAGE</button>
+            </form>
+        </div>
+    </div>
+    </section>
+
+    <section class="aboutus">
+        <h3>ABOUT US</h3>
+        <P>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda distinctio, nostrum suscipit voluptates
+            exercitationem repudiandae quidem placeat alias, accusantium pariatur corporis quo quia fuga dolor aliquam?
+            Quia similique deleniti modi fugit ad nostrum omnis.
+        </P>
+    </section>
+
+    <SECTION class="footer">
+        <p>Made by sujal web development company. Copyright<i class="fa fa-copyright" aria-hidden="true"></i> action
+            reserved</p>
+    </SECTION>
+
+    <!--------------------------------JAVASCRIPT-------------------------------------------------------------------------------------->
+    <script>
+        var NAVLINKS = document.getElementById("NAVLINKS");
+        function showmenu() {
+            NAVLINKS.style.right = "0px";
+        }
+        function hidemenu() {
+            NAVLINKS.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
