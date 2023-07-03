@@ -1,12 +1,12 @@
 const express=require('express');
 const app=express();
 const path =require('path');
-const port=3000;
+const port=3002;
 const mongoose = require('mongoose');
 const bodyparser = require('body-parser');
 
 
-mongoose.connect('mongodb://localhost:27017/collegemessagesdata', {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect('mongodb+srv://sujalsahu:Sujalsahu%40123@shoespedia.e3fqzrd.mongodb.net/CollegeWebsiteData?retryWrites=true&w=majority');
 
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
