@@ -4,5 +4,16 @@
     "express": "^4.18.2",
     "mongodb": "^5.6.0",
     "mongoose": "^7.3.1"
-  }
+  },
+  "name": "cambridge-university",
+  "description": "It is the college website which shows my frontend skills. This website is made with only HTML,CSS and Javascript.",
+  "version": "1.0.0",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sujalshau",
+  "license": "ISC"
 }
