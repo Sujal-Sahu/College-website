@@ -4,9 +4,9 @@ const path =require('path');
 const port=3000;
 const mongoose = require('mongoose');
 const bodyparser = require('body-parser');
+require('dotenv').config();
 
-
-mongoose.connect('mongodb://localhost:27017/collegemessagesdata', {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect(process.env.MONGO_URI);
 
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
